@@ -6,31 +6,33 @@
 
 <h2>GTAA TOP 3 List</h2>
 <br>
-<table class="table-bordered">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Link</th>
-            <th>Average</th>
-            <th>1 mon</th>
-            <th>3 mon</th>
-            <th>6 mon</th>
-            <th>12 mon</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for value in values %}
-            <tr {% if loop.index <= 3 %} class="table-success"{% endif %}>
-                <td>{{value.name}}</td>
-                <td><a href={{value.url}}>Link to {{value.name}}</a></td>
-                <td {% if value.average < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.average}}</td>
-                <td {% if value.one < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.one}}</td>
-                <td {% if value.three < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.three}}</td>
-                <td {% if value.six < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.six}}</td>
-                <td {% if value.twelf < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.twelf}}</td>
+<div class="table-responsive">
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Link</th>
+                <th>Average</th>
+                <th>1 mon</th>
+                <th>3 mon</th>
+                <th>6 mon</th>
+                <th>12 mon</th>
             </tr>
-        {% endfor %}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            {% for value in values %}
+                <tr {% if loop.index <= 3 %} class="table-success"{% endif %}>
+                    <td>{{value.name}}</td>
+                    <td><a href={{value.url}}>Link to {{value.name}}</a></td>
+                    <td {% if value.average < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.average}}</td>
+                    <td {% if value.one < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.one}}</td>
+                    <td {% if value.three < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.three}}</td>
+                    <td {% if value.six < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.six}}</td>
+                    <td {% if value.twelf < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.twelf}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 
 {% endblock %}
