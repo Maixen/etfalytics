@@ -16,7 +16,10 @@ VALUES = [
     ETF('Amundi Global Prime', 'https://www.justetf.com/de/etf-profile.html?query=S%26P++500&isin=LU2089238203&from=search#rendite', '/html/body/div[1]/div[3]/div[3]/div[18]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro'),
     ETF('Amundi Prime Emerging Markets', 'https://www.justetf.com/de/etf-profile.html?query=Lyxor++Core++US&groupField=index&from=search&isin=LU2300295123#rendite', '/html/body/div[1]/div[3]/div[3]/div[18]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro'),
     ETF('Lyxor Core STOXX Europe 600', 'https://www.justetf.com/de/etf-profile.html?query=Lyxor++Core++US&groupField=index&from=search&isin=LU0908500753#rendite', '/html/body/div[1]/div[3]/div[3]/div[18]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro'),
-    ETF('Xtrackers Bloomberg Commodity Swap', 'https://www.justetf.com/de/etf-profile.html?query=Lyxor++Core++US&groupField=index&from=search&isin=LU2278080713#rendite', '/html/body/div[1]/div[3]/div[3]/div[17]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro')
+    ETF('Xtrackers Bloomberg Commodity Swap', 'https://www.justetf.com/de/etf-profile.html?query=Lyxor++Core++US&groupField=index&from=search&isin=LU2278080713#rendite', '/html/body/div[1]/div[3]/div[3]/div[17]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro'),
+    ETF('VanEck Bitcoin', 'https://www.justetf.com/de/etf-profile.html?isin=DE000A28M8D0&from=search', '/html/body/div[1]/div[3]/div[3]/div[17]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro'),
+    ETF('Lyxor Core US Equity', 'https://www.justetf.com/de/etf-profile.html?isin=LU1781540957&from=search#uebersicht', '/html/body/div[1]/div[3]/div[3]/div[18]/div[5]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro'),
+    ETF('XTrackers S&P 500 2x', 'https://www.justetf.com/de/etf-profile.html?isin=LU0411078552&from=search', '/html/body/div[1]/div[3]/div[3]/div[17]/div[4]/div[1]/div/div/table/tbody', 'Errro', 'Errro', 'Errro', 'Errro', 'Errro')
 ]
 
 s = HTMLSession()

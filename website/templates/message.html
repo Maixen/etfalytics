@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <div class="form-group">
+        <label for="target">Target username</label>
+        <input type="text" class="form-control" id="target_username" name="target_username" placeholder="Username of target">
+    </div>
+    <br>
+    <textarea name="message" id="message" class="form-control"></textarea>
+    <br>
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Send (Test-Demo V1.0)</button>
+    </div>
+</form>
+<br>
+<br>
+<form action="{{ url_for('views.del_message') }}" method="POST">
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Delete all own messages</button>
+    </div>
+</form>
+<br>
+<div class="text-info">{% if user.message %} {{ user.message|safe }} {% else %} No message {% endif %}</div>
+{% endblock %}
