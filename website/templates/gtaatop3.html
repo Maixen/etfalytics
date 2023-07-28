@@ -17,6 +17,7 @@
                 <th>3 mon</th>
                 <th>6 mon</th>
                 <th>12 mon</th>
+                <th>200 day average</th>
             </tr>
         </thead>
         <tbody>
@@ -29,10 +30,22 @@
                     <td {% if value.three < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.three}}</td>
                     <td {% if value.six < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.six}}</td>
                     <td {% if value.twelf < 0 %} class="text-danger" {% else %} class="text-success" {% endif %}>{{value.twelf}}</td>
+                    <td>
+                        <img src="{{ value.img_url }}" alt="Chart">
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
 </div>
+<br>
+<h3>
+    Pictures downloaded at real time from comdirect.de and https://pixabay.com/de/vectors/falsch-fehler-fehlt-fehlend-error-2061131/
+    <br>
+    if there are other pictures than the graphes or the error, please contact us
+    <br>
+    <br>
+    Data from justetf.de
+</h3>
 
 {% endblock %}
